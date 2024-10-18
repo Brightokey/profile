@@ -47,13 +47,26 @@
   max-height: 180px; /* Adjust this value to fit the image properly in the card */
   object-fit: cover; /* This makes sure the image covers the area properly */
 }
-  .card-img-top {
-    width: 300px; /* Adjust to your preferred size */
-    transition: transform 0.5s ease; /* Smooth zoom transition */
+.card-img-top {
+    width: 100%;
+    max-width: 100vw;
+    cursor: zoom-in;
+    transition: transform 0.5s ease;
 }
 
-.card-img-top:hover {
-    transform: scale(1.5); /* Zoom factor */
+.card-img-top.zoomed {
+    transform: scale(1.5); /* Adjust zoom level as needed */
+    cursor: zoom-out;
+}
+
+  
+  /*.card-img-top {
+    width: 300px; /* Adjust to your preferred size */
+   /* transition: transform 0.5s ease;/* Smooth zoom transition */ */
+}
+
+/*.card-img-top:hover {
+    transform: scale(1.5); /* Zoom factor */ */
 }
 
 .card-body {
