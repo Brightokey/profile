@@ -47,6 +47,15 @@
   max-height: 180px; /* Adjust this value to fit the image properly in the card */
   object-fit: cover; /* This makes sure the image covers the area properly */
 }
+  .card-img-top {
+    width: 300px; /* Adjust to your preferred size */
+    transition: transform 0.5s ease; /* Smooth zoom transition */
+}
+
+.card-img-top:hover {
+    transform: scale(1.5); /* Zoom factor */
+}
+
 .card-body {
   padding: 15px;
 }
